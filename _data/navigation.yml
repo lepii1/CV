@@ -1,8 +1,8 @@
 - name: Home
-  link: /
+  link: /CV
 - name: Friends
-  link: /cvfriends.html
+  link: /CV/cvfriends.html
 - name: Blog
-  link: /cvblog.html
+  link: ?CV/cvblog.html
 - name: Peoples
-  link: /cvpeoples.html
+  link: /CV/cvpeoples.html
