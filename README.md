@@ -1,1 +1,1 @@
-https://lepii1.github.io/
+https://lepii1.github.io/CV/
