@@ -1,7 +1,7 @@
 - name: Home
   link: /
 - name: Friends
-  link: /CV/friends.html
+  link: cvfriends.html
 - name: Blog
   link: /blog.html
 - name: Peoples
