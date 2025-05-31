@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const iconImg = document.getElementById("theme-icon");
   const body = document.body;
 
-  const sunIcon = "/assets/images/hidup.png";
-  const moonIcon = "/assets/images/mati.png";
+  const sunIcon = "{{ site.baseurl }}/assets/images/hidup.png";
+  const moonIcon = "{{ site.baseurl }}/assets/images/mati.png";
 
   // Cek preferensi
   if (localStorage.getItem("theme") === "dark") {
