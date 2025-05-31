@@ -25,8 +25,8 @@ function toggleMobileSidebar() {
     const iconImg = document.getElementById("theme-icon");
     const body = document.body;
 
-    const sunIcon = "/assets/images/on.jpg";
-    const moonIcon = "/assets/images/off.jpg";
+    const sunIcon = "/assets/images/on.png";
+    const moonIcon = "/assets/images/off.png";
 
     // Cek preferensi
     if (localStorage.getItem("theme") === "dark") {
