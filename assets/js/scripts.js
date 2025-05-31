@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     body.classList.toggle("dark");
     const isDark = body.classList.contains("dark");
     localStorage.setItem("theme", isDark ? "dark" : "light");
-    iconImg.src = isDark ? sunIcon : moonIcon;
+    iconImg.src = isDark ? sunIcon: moonIcon;
   });
 });
 
