@@ -10,7 +10,7 @@ title: Peoples
 <ol>
   {% for student in site.students %}
     <li>
-        <a href="{{ student.url }}">{{ student.name }}</a>
+        <a href="{{ site.baseurl }}{{ student.url }}">{{ student.name }}</a>
     </li>
   {% endfor %}
 </ol>
