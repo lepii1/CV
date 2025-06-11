@@ -12,32 +12,32 @@
 </header>
 
 <aside class="sidebar desktop-sidebar" id="sidebar">
-<div class="sidebar-nav">
-<ul>
-{% for item in site.data.navigation %}
-<li>
- <a href="{{ item.link }}" {% if page.url == item.link %} class="current"{% endif %}>
-    {{ item.name | upcase }}
- </a>
-</li>
-    {% endfor %}
-</ul>
-</div>
-</div>
+    <div class="sidebar-nav">
+        <ul>
+            {% for item in site.data.navigation %}
+            <li>
+                <a href="{{ item.link | relative_url }}" {% if page.url == item.link or page.url == item.link | relative_url %} class="current"{% endif %}>
+                    {{ item.name | upcase }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    </div>
 </aside>
 
 <aside id="mobile-sidebar" class="sidebar mobile-sidebar">
-<div class="sidebar-nav">
-<ul>
-{% for item in site.data.navigation %}
-<li>
-    <a href="{{ item.link }}" {% if page.url == item.link %} class="block py-2"{% endif %}>
-        {{ item.name | upcase }}
-    </a>
-</li>
-{% endfor %}
-</ul>
-</div>
+    <div class="sidebar-nav">
+        <ul>
+            {% for item in site.data.navigation %}
+            <li>
+                <a href="{{ item.link }}" {% if page.url == item.link %} class="block py-2"{% endif %}>
+                    {{ item.name | upcase }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </aside>
 
 <div id="backdrop" onclick="toggleMobileSidebar()"></div>
